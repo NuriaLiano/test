@@ -59,7 +59,7 @@ const config = {
       }),
     ],
   ],
-
+  themes: [path.resolve(__dirname, './src/theme/skilly-theme')],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
