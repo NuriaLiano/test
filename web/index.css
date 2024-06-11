@@ -1,0 +1,40 @@
+.main-container{
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.main-container .banner-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: var(--skilly-green);
+    flex-direction: column;
+}
+
+.main-container .banner-index h1 {
+    font-family: nunito;
+    font-size: 350%;
+    font-weight: 500;
+    margin: 0;
+}
+
+.main-container .banner-index h1:nth-child(1){
+    margin-bottom: 1%;
+}
+
+.main-container .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    background-color: var(--skilly-green);
+}
