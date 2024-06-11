@@ -1,13 +1,8 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import raw from 'raw.macro'; // Importamos raw.macro para importar el contenido del HTML como texto.
-
-const htmlContent = raw('../web/index.html'); // Importamos el contenido del HTML.
+import htmlContent from './custom-home'; // Importamos el contenido del HTML desde custom-home.js
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -15,9 +10,9 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} /> {/* Renderizamos el HTML personalizado */}
-      
-      
+      <div className={clsx('container', styles.customHtml)}>
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} /> {/* Renderizamos el HTML personalizado */}
+      </div>
     </Layout>
   );
 }
