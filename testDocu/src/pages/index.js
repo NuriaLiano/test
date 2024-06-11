@@ -6,7 +6,9 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import raw from 'raw.macro'; // Importamos raw.macro para importar el contenido del HTML como texto.
 
+const htmlContent = raw('../../../web/index.html'); // Importamos el contenido del HTML.
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -36,6 +38,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} /> {/* Renderizamos el HTML personalizado */}
         <HomepageFeatures />
       </main>
     </Layout>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+        <pattern id="pattern_BOU7D" patternUnits="userSpaceOnUse" width="33.5" height="33.5" patternTransform="rotate(45)">
+            <line x1="0" y="0" x2="0" y2="33.5" stroke="#7AC943" stroke-width="27" />
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#pattern_BOU7D)" opacity="1" />
+</svg>

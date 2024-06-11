@@ -1,40 +1,149 @@
-.main-container{
-    display: flex;
-    
-    align-items: center;
-    width: 100%;
-    height: 40vh;
-    flex-direction: column;
-    background-color: blue;
-}
 
-.main-container .banner-index{
+
+.courses-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60%;
-    background-color: var(--skilly-green);
+    height: 80vh;
     flex-direction: column;
+    background-color: var(--dark-back);
+    padding: 1%;
+    gap: 5%;
+    color: white;
+    margin-top: 1%;
+}
+.courses-container .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 1050px;
+    height: 1000px;
 }
 
-.main-container .banner-index h1 {
+.courses-container .cards .card-principal, .courses-container .cards .card-complementary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    gap: 5%;
+
+}
+
+.courses-container .cards .card-principal .card-big, .courses-container .cards .card-complementary .card{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Añadir esta línea para permitir el uso de pseudo-elementos */
+    overflow: hidden; /* Asegurarse de que los pseudo-elementos no salgan de la tarjeta */
+}
+
+.courses-container .cards  .card-principal .card-big::before,
+.courses-container .cards .card-complementary .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 1; /* Coloca la superposición detrás del contenido */
+    border-radius: 15px; /* Coincide con el radio del borde de la tarjeta */
+}
+
+.courses-container .cards .card-principal .card-big *,
+.courses-container .cards .card-complementary .card * {
+    position: relative;
+    z-index: 2; /* Coloca el contenido por encima de la superposición */
+}
+
+.courses-container .cards .card-principal .card-big,
+.courses-container .cards .card-complementary .card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.courses-container .cards .card-principal .card-big:hover,
+.courses-container .cards .card-complementary .card:hover {
+    transform:perspective(1000px) translateZ(20px);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.641);
+}
+
+.courses-container .cards .card-principal #categories {
+    background-image: url('media/categories.jpg'); /* Añade la URL de tu imagen */
+}
+.courses-container .cards .card-principal #role {
+    background-image: url('media/roles.jpg');
+}
+.courses-container .cards .card-complementary #fundamental {
+    background-image: url('media/fundamentals.jpg'); /* Añade la URL de tu imagen */
+}
+.courses-container .cards .card-complementary #setup {
+    background-image: url('media/setup.jpg');
+}
+.courses-container .cards .card-complementary #roadmap {
+    background-image: url('media/roadmap.jpg'); /* Añade la URL de tu imagen */
+}
+
+
+.courses-container .cards .card-principal .card-big h3, .courses-container .cards .card-complementary .card h4{
+    color: rgb(140, 200, 51);
     font-family: nunito;
-    font-size: 350%;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     margin: 0;
 }
 
-.main-container .banner-index h1:nth-child(1){
-    margin-bottom: 1%;
+.courses-container .cards .card-principal .card-big p, .courses-container .cards .card-complementary .card p{
+    color: white;
+    text-align: center;
 }
 
-.main-container .info{
+.about-skilly{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 40%;
-    background-color: var(--skilly-green);
+    height: 50vh;
+    padding: 1%;
+    gap: 5%;
+}
+
+.about-skilly .about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.about-skilly .about-container img{
+    width: 20%;
+}
+
+.about-skilly .about-container .about-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 5%;
+    text-align: justify;
+    height: 100%;
 }

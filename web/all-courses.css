@@ -1,0 +1,152 @@
+/* all-courses.css */
+
+.tags-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 1%;
+}
+.tags-search input{
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    background-color: #ececec;
+    padding: 1%;
+}
+
+.tags-search input:hover{
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    background-color: #cdeeb6;
+    border: #7AC943 solid 1px;
+    border-radius: 15px;
+    padding: 1%;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Ajusta la altura según el contenido */
+    flex-direction: column;
+    background-color: var(--dark-back);
+    padding: 1%;
+    gap: 5%;
+    color: white;
+    margin-top: 1%;
+}
+
+.courses-container .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Cambiado a columna para envolver dentro del contenedor */
+    width: 100%;
+}
+
+.courses-container .cards .card-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite el ajuste de las tarjetas */
+    gap: 2%; /* Espacio entre las tarjetas */
+    width: 80%;
+}
+
+.courses-container .cards .card-principal .card-big {
+    flex: 1 1 calc(50% - 1%); /* Ajusta la tarjeta para que ocupe el 49% del contenedor, permitiendo dos por fila */
+    max-width: calc(20% - 1%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin: 1% 0; /* Espacio vertical entre las filas */
+    text-decoration: none;
+}
+
+.courses-container .cards .card-principal .card-big::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.courses-container .cards .card-principal .card-big * {
+    position: relative;
+    z-index: 2;
+}
+
+.courses-container .cards .card-principal .card-big {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.courses-container .cards .card-principal .card-big:hover {
+    transform: perspective(1000px) translateZ(20px);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.641);
+}
+
+.courses-container .cards .card-principal #sysadmin {
+    background-image: url('media/sysadmin.jpg'); /* Añade la URL de tu imagen */
+}
+
+.courses-container .cards .card-principal #frontend {
+    background-image: url('media/frontend.jpg');
+}
+.courses-container .cards .card-principal #backend {
+    background-image: url('media/backend.jpg');
+}
+.courses-container .cards .card-principal #fullstack {
+    background-image: url('media/fullstack.jpg');
+}
+.courses-container .cards .card-principal #data {
+    background-image: url('media/data.jpg');
+}
+.courses-container .cards .card-principal #teacher {
+    background-image: url('media/teacher.jpg');
+}
+.courses-container .cards .card-principal #microsystems {
+    background-image: url('media/microsystems.jpg');
+}
+
+.courses-container .cards .card-principal .card-big h3 {
+    color: #7AC943;
+    font-family: nunito;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.courses-container .cards .card-principal .card-big p {
+    color: white;
+    text-align: center;
+    padding: 2%;
+    width: 80%;
+    height: 70%;
+    background-color: rgba(41, 41, 41, 0.46);
+    border-radius: 15px;
+}
+
