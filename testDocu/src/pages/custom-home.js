@@ -11,18 +11,18 @@ const CustomHome = () => {
         </section>
         <section className="menu-container">
           <ul className="header-list menulist">
-            <li><a href="roles.html" rel="noopener noreferrer">Roles { 🥷 }</a></li>
-            <li><a href="categories.html" rel="noopener noreferrer">Categorías { 🗂️ } </a></li>
-            <li><a href="fundamental.html" rel="noopener noreferrer">Fundamentos { 🌳 }</a></li>
-            <li><a href="setup.html" rel="noopener noreferrer">Setup { ⚙️ }</a></li>
-            <li><a href="roadmap.html" rel="noopener noreferrer">Roadmap { 🗺️ }</a></li>
-            <li><a href="https://www.cal.com/skilly" rel="noopener noreferrer" id="bookingClasses">Reserva tu clase { 👩‍🏫 }</a></li>
+            <li><a href="roles.html" rel="noopener noreferrer">Roles { '🥷' }</a></li>
+            <li><a href="categories.html" rel="noopener noreferrer">Categorías { '🗂️' } </a></li>
+            <li><a href="fundamental.html" rel="noopener noreferrer">Fundamentos { '🌳' }</a></li>
+            <li><a href="setup.html" rel="noopener noreferrer">Setup { '⚙️' }</a></li>
+            <li><a href="roadmap.html" rel="noopener noreferrer">Roadmap { '🗺️' }</a></li>
+            <li><a href="https://www.cal.com/skilly" rel="noopener noreferrer" id="bookingClasses">Reserva tu clase { '👩‍🏫' }</a></li>
           </ul>
         </section>
       </header>
       <main className="main-container">
         <div className="banner-index">
-          <h1>Potencia tus skills🚀</h1>
+          <h1>Potencia tus skills{'🚀'}</h1>
           <h1>Aprende de verdad</h1>
         </div>
         <div className="info">
@@ -36,7 +36,7 @@ const CustomHome = () => {
         <h2 className="title2">Cursos</h2>
         <div className="text-courses-container">
           <p>Investiga los cursos por categoria, rol, temas o échalos un vistazo a todos</p>
-          <p className="whisper">¡Revisa los fundamentos, nunca viene mal un repaso 😉!</p>
+          <p className="whisper">¡Revisa los fundamentos, nunca viene mal un repaso {'😉'}!</p>
         </div>
         <div className="cards">
           <div className="card-principal">
@@ -87,7 +87,7 @@ const CustomHome = () => {
           </div>
           <img src="/media/about.jpg" alt="" />
         </div>
-        <a href="" className="button-general">Conócenos 👀</a>
+        <a href="" className="button-general">Conócenos {'👀'}</a>
       </article>
       <footer>
         <img src="/media/img/7AC943_white_transparent.png" alt="logo_skilly" />
@@ -103,7 +103,7 @@ const CustomHome = () => {
           <li><a href="#">Política de cookies</a></li>
           <li><a href="#">Política de cancelación</a></li>
         </ul>
-        <p>Desde Cantabria con mucho 💚</p>
+        <p>Desde Cantabria con mucho {'💚'}</p>
       </footer>
       <a href="#top" id="to-top-button">↑</a>
     </>
