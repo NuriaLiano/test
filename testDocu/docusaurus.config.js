@@ -5,7 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-import path from 'path';
+//import path from 'path';
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -60,7 +61,7 @@ const config = {
       }),
     ],
   ],
-  themes: [path.resolve(__dirname, './src/theme/skilly-theme')],
+  //themes: [path.resolve(__dirname, './src/theme/skilly-theme')],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
