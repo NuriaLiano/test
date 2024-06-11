@@ -3,6 +3,9 @@ import React from 'react';
 const CustomHome = () => {
   return (
     <>
+      <link rel="stylesheet" href="/index.css" />
+      <link rel="stylesheet" href="/main.css" />
+
       <header>
         <section className="logo-container">
           <a href="https://www.cursos.skilly.es" target="_blank" rel="noopener noreferrer">
