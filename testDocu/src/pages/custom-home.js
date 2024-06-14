@@ -1,11 +1,23 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+// import '../../static/index.css'; // Importa tu archivo CSS específico
+// import '../../static/main.css'; // Si tienes otro archivo CSS específico
 
 const CustomHome = () => {
   return (
     <>
-      <link rel="stylesheet" href="/index.css" />
-      <link rel="stylesheet" href="/main.css" />
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/index.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <link rel="icon" href="../../static/media/icons/ico_skilly.ico" type="image/x-icon" />
+        <title>Cursos | Skilly</title>
+      </Helmet>
 
+      <div class="events">
+        <p>💥NUEVO CURSO: Introducción a algoritmos</p>
+      </div>
       <header>
         <section className="logo-container">
           <a href="https://www.cursos.skilly.es" target="_blank" rel="noopener noreferrer">
@@ -14,12 +26,9 @@ const CustomHome = () => {
         </section>
         <section className="menu-container">
           <ul className="header-list menulist">
-            <li><a href="roles.html" rel="noopener noreferrer">Roles { '🥷' }</a></li>
-            <li><a href="categories.html" rel="noopener noreferrer">Categorías { '🗂️' } </a></li>
-            <li><a href="fundamental.html" rel="noopener noreferrer">Fundamentos { '🌳' }</a></li>
-            <li><a href="setup.html" rel="noopener noreferrer">Setup { '⚙️' }</a></li>
-            <li><a href="roadmap.html" rel="noopener noreferrer">Roadmap { '🗺️' }</a></li>
-            <li><a href="https://www.cal.com/skilly" rel="noopener noreferrer" id="bookingClasses">Reserva tu clase { '👩‍🏫' }</a></li>
+            <li><a href="roles.html" rel="noopener noreferrer">Cursos &#123; 📚 &#125;</a></li>
+            <li><a href="roadmap.html" rel="noopener noreferrer">Roadmaps  &#123; 🗺️ &#125;</a></li>
+            <li><a href="https://www.cal.com/skilly" rel="noopener noreferrer" id="bookingClasses">Reserva tu clase  &#123; 👩‍🏫 &#125;</a></li>
           </ul>
         </section>
       </header>

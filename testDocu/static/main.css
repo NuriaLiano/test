@@ -57,7 +57,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('media/diagonal-stripes.svg'); /* Imagen de prueba */
+    background: url('./media/diagonal-stripes.svg'); /* Imagen de prueba */
     background-size: 100%;
     z-index: 0;
 }

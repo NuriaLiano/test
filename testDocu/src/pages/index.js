@@ -7,7 +7,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      // title={`Cursos | Skilly`} //comentado por que si no se pisa con el title de docusaurus.config.js
       description="Description will go into a meta tag in <head />"
       noFooter={true} // Deshabilita el footer
       noNavbar={true} // Deshabilita el navbar

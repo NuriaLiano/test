@@ -3,9 +3,9 @@ import path from 'path';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Skilly docs',
+  title: 'Cursos | Skilly', // Este es el título por defecto
   tagline: 'Learn is so cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'media/icons/ico_skilly.ico', // Ruta correcta del favicon
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
   organizationName: 'skilly',
